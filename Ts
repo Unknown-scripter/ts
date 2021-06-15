@@ -1820,5 +1820,5 @@ local function UBEH_fake_script() -- Theme.LocalScript
 			update(input)
 		end
 	end)
-end
+	end
 coroutine.wrap(UBEH_fake_script)()
