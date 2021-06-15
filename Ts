@@ -1,0 +1,1824 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local V3 = Instance.new("ScreenGui")
+local Loading = Instance.new("Frame")
+local Decor = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local Loadbar = Instance.new("Frame")
+local Progress = Instance.new("Frame")
+local Start = Instance.new("TextLabel")
+local Load = Instance.new("TextLabel")
+local Data = Instance.new("TextLabel")
+local Done = Instance.new("TextLabel")
+local Scripts = Instance.new("TextLabel")
+local Update = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local Bar = Instance.new("Frame")
+local Load_2 = Instance.new("Frame")
+local Loading_2 = Instance.new("TextLabel")
+local Updating = Instance.new("TextLabel")
+local Fetching = Instance.new("TextLabel")
+local Done_2 = Instance.new("TextLabel")
+local Theme = Instance.new("Frame")
+local Background = Instance.new("Frame")
+local Tools = Instance.new("Frame")
+local JumpBox = Instance.new("TextBox")
+local SpeedBox = Instance.new("TextBox")
+local DescJP = Instance.new("TextLabel")
+local DescSpeed = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Teleporttycoon = Instance.new("TextButton")
+local Spawntycoon = Instance.new("TextButton")
+local Ruby = Instance.new("TextButton")
+local Sap = Instance.new("TextButton")
+local Diamond = Instance.new("TextButton")
+local DescJP_2 = Instance.new("TextLabel")
+local Spawn = Instance.new("TextButton")
+local Nopvp = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local Grav = Instance.new("TextBox")
+local DescJP_3 = Instance.new("TextLabel")
+local Scripts_2 = Instance.new("Frame")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextButton_3 = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextButton_4 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextButton_5 = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextButton_6 = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextButton_7 = Instance.new("TextButton")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local Side = Instance.new("Frame")
+local Info = Instance.new("TextButton")
+local Info_2 = Instance.new("TextLabel")
+local Scripts_3 = Instance.new("ImageButton")
+local Scripts_4 = Instance.new("TextLabel")
+local Tools_2 = Instance.new("ImageButton")
+local Tools_3 = Instance.new("TextLabel")
+local Verify = Instance.new("ImageButton")
+local Verify_2 = Instance.new("TextLabel")
+local Okin = Instance.new("ImageButton")
+local Tools_4 = Instance.new("TextLabel")
+
+--Properties:
+
+V3.Name = "V3"
+V3.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+V3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+V3.ResetOnSpawn = false
+
+Loading.Name = "Loading"
+Loading.Parent = V3
+Loading.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+Loading.Position = UDim2.new(0.321264684, 0, 0.40036425, 0)
+Loading.Size = UDim2.new(0.356960744, 0, 0.227649003, 0)
+
+Decor.Name = "Decor"
+Decor.Parent = Loading
+Decor.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Decor.BorderSizePixel = 0
+Decor.Position = UDim2.new(-0.000163922989, 0, -0.00327215018, 0)
+Decor.Size = UDim2.new(1, 0, 0.199344814, 0)
+
+TextLabel.Parent = Decor
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.322857141, 0, 0.0729663074, 0)
+TextLabel.Size = UDim2.new(0, 249, 0, 50)
+TextLabel.Font = Enum.Font.Roboto
+TextLabel.Text = "Tycoon Sploit Loader"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Decor
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.00428571412, 0, 0.0729663074, 0)
+TextLabel_2.Size = UDim2.new(0, 50, 0, 50)
+TextLabel_2.Font = Enum.Font.SciFi
+TextLabel_2.Text = "TS"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+TextLabel_3.Parent = Decor
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.0528571419, 0, -0.109449454, 0)
+TextLabel_3.Size = UDim2.new(0, 31, 0, 30)
+TextLabel_3.Font = Enum.Font.Code
+TextLabel_3.Text = "V3"
+TextLabel_3.TextColor3 = Color3.fromRGB(253, 128, 8)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Loadbar.Name = "Loadbar"
+Loadbar.Parent = Loading
+Loadbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loadbar.BorderSizePixel = 0
+Loadbar.Position = UDim2.new(0.106978931, 0, 0.589455128, 0)
+Loadbar.Size = UDim2.new(0.785714269, 0, 0.181818187, 0)
+
+Progress.Name = "Progress"
+Progress.Parent = Loadbar
+Progress.BackgroundColor3 = Color3.fromRGB(16, 128, 64)
+Progress.BorderColor3 = Color3.fromRGB(16, 128, 64)
+Progress.Size = UDim2.new(0, 0, 1, 0)
+
+Start.Name = "Start"
+Start.Parent = Loading
+Start.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Start.BackgroundTransparency = 1.000
+Start.Position = UDim2.new(0.321428567, 0, 0.345693588, 0)
+Start.Size = UDim2.new(0, 249, 0, 50)
+Start.Visible = false
+Start.Font = Enum.Font.Roboto
+Start.Text = "Preparing Load..."
+Start.TextColor3 = Color3.fromRGB(255, 255, 255)
+Start.TextScaled = true
+Start.TextSize = 14.000
+Start.TextWrapped = true
+
+Load.Name = "Load"
+Load.Parent = Loading
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.BackgroundTransparency = 1.000
+Load.Position = UDim2.new(0.321428567, 0, 0.345693588, 0)
+Load.Size = UDim2.new(0, 249, 0, 50)
+Load.Visible = false
+Load.Font = Enum.Font.Roboto
+Load.Text = "Loading assets..."
+Load.TextColor3 = Color3.fromRGB(255, 255, 255)
+Load.TextScaled = true
+Load.TextSize = 14.000
+Load.TextWrapped = true
+
+Data.Name = "Data"
+Data.Parent = Loading
+Data.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Data.BackgroundTransparency = 1.000
+Data.Position = UDim2.new(0.321428567, 0, 0.345693588, 0)
+Data.Size = UDim2.new(0, 249, 0, 50)
+Data.Visible = false
+Data.Font = Enum.Font.Roboto
+Data.Text = "Fetching Data..."
+Data.TextColor3 = Color3.fromRGB(255, 255, 255)
+Data.TextScaled = true
+Data.TextSize = 14.000
+Data.TextWrapped = true
+
+Done.Name = "Done"
+Done.Parent = Loading
+Done.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Done.BackgroundTransparency = 1.000
+Done.Position = UDim2.new(0.321428567, 0, 0.345693588, 0)
+Done.Size = UDim2.new(0, 249, 0, 50)
+Done.Visible = false
+Done.Font = Enum.Font.Merriweather
+Done.Text = "DONE!!!"
+Done.TextColor3 = Color3.fromRGB(33, 255, 6)
+Done.TextScaled = true
+Done.TextSize = 14.000
+Done.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Loading
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0.321428567, 0, 0.345693588, 0)
+Scripts.Size = UDim2.new(0, 249, 0, 50)
+Scripts.Visible = false
+Scripts.Font = Enum.Font.Roboto
+Scripts.Text = "Getting scripts done..."
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextScaled = true
+Scripts.TextSize = 14.000
+Scripts.TextWrapped = true
+
+Update.Name = "Update"
+Update.Parent = V3
+Update.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Update.Size = UDim2.new(1, 0, 1, 0)
+Update.Visible = false
+
+ImageLabel.Parent = Update
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.472885042, 0, 0.473509938, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxassetid://6835107738"
+
+Bar.Name = "Bar"
+Bar.Parent = Update
+Bar.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Bar.Position = UDim2.new(0.431670278, 0, 0.556291401, 0)
+Bar.Size = UDim2.new(0.135032535, 0, 0.043046359, 0)
+
+Load_2.Name = "Load"
+Load_2.Parent = Bar
+Load_2.BackgroundColor3 = Color3.fromRGB(16, 128, 64)
+Load_2.Position = UDim2.new(-0.0031186759, 0, -0.00140146108, 0)
+Load_2.Size = UDim2.new(0, 0, 1, 0)
+Load_2.Visible = false
+
+Loading_2.Name = "Loading"
+Loading_2.Parent = Update
+Loading_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading_2.BackgroundTransparency = 1.000
+Loading_2.Position = UDim2.new(0.43771714, 0, 0.603476822, 0)
+Loading_2.Size = UDim2.new(0, 250, 0, 50)
+Loading_2.Visible = false
+Loading_2.Font = Enum.Font.Code
+Loading_2.Text = "Loading..."
+Loading_2.TextColor3 = Color3.fromRGB(15, 128, 255)
+Loading_2.TextScaled = true
+Loading_2.TextSize = 14.000
+Loading_2.TextWrapped = true
+
+Updating.Name = "Updating"
+Updating.Parent = Update
+Updating.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updating.BackgroundTransparency = 1.000
+Updating.Position = UDim2.new(0.401985139, 0, 0.603476822, 0)
+Updating.Size = UDim2.new(0, 395, 0, 50)
+Updating.Visible = false
+Updating.Font = Enum.Font.Code
+Updating.Text = "Checking For Updates..."
+Updating.TextColor3 = Color3.fromRGB(128, 0, 2)
+Updating.TextScaled = true
+Updating.TextSize = 14.000
+Updating.TextWrapped = true
+
+Fetching.Name = "Fetching"
+Fetching.Parent = Update
+Fetching.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fetching.BackgroundTransparency = 1.000
+Fetching.Position = UDim2.new(0.43771714, 0, 0.603476822, 0)
+Fetching.Size = UDim2.new(0, 250, 0, 50)
+Fetching.Visible = false
+Fetching.Font = Enum.Font.Code
+Fetching.Text = "Fetching data..."
+Fetching.TextColor3 = Color3.fromRGB(16, 128, 1)
+Fetching.TextScaled = true
+Fetching.TextSize = 14.000
+Fetching.TextWrapped = true
+
+Done_2.Name = "Done"
+Done_2.Parent = Update
+Done_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Done_2.BackgroundTransparency = 1.000
+Done_2.Position = UDim2.new(0.43771714, 0, 0.603476822, 0)
+Done_2.Size = UDim2.new(0, 250, 0, 50)
+Done_2.Visible = false
+Done_2.Font = Enum.Font.Code
+Done_2.Text = "Done!!!"
+Done_2.TextColor3 = Color3.fromRGB(32, 255, 255)
+Done_2.TextScaled = true
+Done_2.TextSize = 14.000
+Done_2.TextWrapped = true
+
+Theme.Name = "Theme"
+Theme.Parent = V3
+Theme.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+Theme.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Theme.Position = UDim2.new(0.254971951, 0, 0.307880789, 0)
+Theme.Size = UDim2.new(0.509943902, 0, 0.0240066219, 0)
+
+Background.Name = "Background"
+Background.Parent = Theme
+Background.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Background.BorderSizePixel = 0
+Background.Position = UDim2.new(0.00100000005, 0, 0.979866803, 0)
+Background.Size = UDim2.new(1, 0, 21.5517235, 0)
+
+Tools.Name = "Tools"
+Tools.Parent = Background
+Tools.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Tools.BorderSizePixel = 0
+Tools.Position = UDim2.new(0.0989999995, 0, -0.000933105475, 0)
+Tools.Size = UDim2.new(0.898999989, 0, 1, 0)
+Tools.Visible = false
+
+JumpBox.Name = "JumpBox"
+JumpBox.Parent = Tools
+JumpBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.BackgroundTransparency = 0.500
+JumpBox.BorderSizePixel = 0
+JumpBox.Position = UDim2.new(0.221857637, 0, 0.117199987, 0)
+JumpBox.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+JumpBox.Font = Enum.Font.SourceSansBold
+JumpBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+JumpBox.Text = "240"
+JumpBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpBox.TextScaled = true
+JumpBox.TextSize = 14.000
+JumpBox.TextStrokeTransparency = 0.000
+JumpBox.TextWrapped = true
+
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = Tools
+SpeedBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.BackgroundTransparency = 0.500
+SpeedBox.BorderSizePixel = 0
+SpeedBox.Position = UDim2.new(0.0245439094, 0, 0.118799984, 0)
+SpeedBox.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+SpeedBox.Font = Enum.Font.SourceSansBold
+SpeedBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+SpeedBox.Text = "150"
+SpeedBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedBox.TextScaled = true
+SpeedBox.TextSize = 14.000
+SpeedBox.TextStrokeTransparency = 0.000
+SpeedBox.TextWrapped = true
+
+DescJP.Name = "DescJP"
+DescJP.Parent = Tools
+DescJP.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+DescJP.BackgroundTransparency = 1.000
+DescJP.BorderColor3 = Color3.fromRGB(0, 53, 7)
+DescJP.BorderSizePixel = 0
+DescJP.Position = UDim2.new(0.221857637, 0, 0.00253310543, 0)
+DescJP.Size = UDim2.new(0.150000006, 0, 0.0970668942, 0)
+DescJP.Font = Enum.Font.Highway
+DescJP.Text = "Jump Power"
+DescJP.TextColor3 = Color3.fromRGB(255, 255, 0)
+DescJP.TextScaled = true
+DescJP.TextSize = 14.000
+DescJP.TextStrokeTransparency = 0.500
+DescJP.TextWrapped = true
+
+DescSpeed.Name = "DescSpeed"
+DescSpeed.Parent = Tools
+DescSpeed.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+DescSpeed.BackgroundTransparency = 1.000
+DescSpeed.BorderColor3 = Color3.fromRGB(0, 53, 7)
+DescSpeed.BorderSizePixel = 0
+DescSpeed.Position = UDim2.new(0.0240823403, 0, 0.00253310427, 0)
+DescSpeed.Size = UDim2.new(0.150000006, 0, 0.0970668942, 0)
+DescSpeed.Font = Enum.Font.Highway
+DescSpeed.Text = "Speed"
+DescSpeed.TextColor3 = Color3.fromRGB(255, 255, 0)
+DescSpeed.TextScaled = true
+DescSpeed.TextSize = 14.000
+DescSpeed.TextStrokeTransparency = 0.500
+DescSpeed.TextWrapped = true
+
+TextButton.Parent = Tools
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.0240823403, 0, 0.284439564, 0)
+TextButton.Size = UDim2.new(0.347581089, 0, 0.109169118, 0)
+TextButton.Style = Enum.ButtonStyle.RobloxRoundButton
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Set Speed and Jump Power"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 40.000
+TextButton.TextWrapped = true
+
+Teleporttycoon.Name = "Teleporttycoon"
+Teleporttycoon.Parent = Tools
+Teleporttycoon.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Teleporttycoon.BorderSizePixel = 0
+Teleporttycoon.Position = UDim2.new(0.563959956, 0, 0.0192000009, 0)
+Teleporttycoon.Size = UDim2.new(0.333704114, 0, 0.1008, 0)
+Teleporttycoon.Font = Enum.Font.Highway
+Teleporttycoon.Text = "Teleport to Tycoon"
+Teleporttycoon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleporttycoon.TextScaled = true
+Teleporttycoon.TextSize = 14.000
+Teleporttycoon.TextWrapped = true
+
+Spawntycoon.Name = "Spawn tycoon"
+Spawntycoon.Parent = Tools
+Spawntycoon.BackgroundColor3 = Color3.fromRGB(254, 178, 0)
+Spawntycoon.BackgroundTransparency = 0.200
+Spawntycoon.BorderSizePixel = 0
+Spawntycoon.Position = UDim2.new(0.563959956, 0, 0.151999995, 0)
+Spawntycoon.Size = UDim2.new(0.333704114, 0, 0.1008, 0)
+Spawntycoon.Font = Enum.Font.Highway
+Spawntycoon.Text = "Spawn Tycoon"
+Spawntycoon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spawntycoon.TextScaled = true
+Spawntycoon.TextSize = 14.000
+Spawntycoon.TextWrapped = true
+
+Ruby.Name = "Ruby"
+Ruby.Parent = Tools
+Ruby.BackgroundColor3 = Color3.fromRGB(252, 1, 7)
+Ruby.BackgroundTransparency = 0.200
+Ruby.BorderSizePixel = 0
+Ruby.Position = UDim2.new(0.563959956, 0, 0.48016718, 0)
+Ruby.Size = UDim2.new(0.333704114, 0, 0.0819418877, 0)
+Ruby.Font = Enum.Font.Highway
+Ruby.Text = "Ruby Zone"
+Ruby.TextColor3 = Color3.fromRGB(255, 255, 255)
+Ruby.TextScaled = true
+Ruby.TextSize = 14.000
+Ruby.TextWrapped = true
+
+Sap.Name = "Sap"
+Sap.Parent = Tools
+Sap.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Sap.BackgroundTransparency = 0.200
+Sap.BorderSizePixel = 0
+Sap.Position = UDim2.new(0.563959956, 0, 0.611534297, 0)
+Sap.Size = UDim2.new(0.333704114, 0, 0.0819418877, 0)
+Sap.Font = Enum.Font.Highway
+Sap.Text = "Sapphire zone"
+Sap.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sap.TextScaled = true
+Sap.TextSize = 14.000
+Sap.TextWrapped = true
+
+Diamond.Name = "Diamond"
+Diamond.Parent = Tools
+Diamond.BackgroundColor3 = Color3.fromRGB(32, 255, 255)
+Diamond.BackgroundTransparency = 0.200
+Diamond.BorderSizePixel = 0
+Diamond.Position = UDim2.new(0.563959956, 0, 0.742901504, 0)
+Diamond.Size = UDim2.new(0.333704114, 0, 0.0819418877, 0)
+Diamond.Font = Enum.Font.Highway
+Diamond.Text = "Diamond Zone"
+Diamond.TextColor3 = Color3.fromRGB(255, 255, 255)
+Diamond.TextScaled = true
+Diamond.TextSize = 14.000
+Diamond.TextWrapped = true
+
+DescJP_2.Name = "DescJP"
+DescJP_2.Parent = Tools
+DescJP_2.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+DescJP_2.BackgroundTransparency = 1.000
+DescJP_2.BorderColor3 = Color3.fromRGB(0, 53, 7)
+DescJP_2.BorderSizePixel = 0
+DescJP_2.Position = UDim2.new(0.620077908, 0, 0.252133191, 0)
+DescJP_2.Size = UDim2.new(0.221190229, 0, 0.0970668942, 0)
+DescJP_2.Font = Enum.Font.Highway
+DescJP_2.Text = "Teleport zones"
+DescJP_2.TextColor3 = Color3.fromRGB(7, 64, 128)
+DescJP_2.TextScaled = true
+DescJP_2.TextSize = 14.000
+DescJP_2.TextStrokeTransparency = 0.500
+DescJP_2.TextWrapped = true
+
+Spawn.Name = "Spawn"
+Spawn.Parent = Tools
+Spawn.BackgroundColor3 = Color3.fromRGB(16, 128, 1)
+Spawn.BackgroundTransparency = 0.200
+Spawn.BorderSizePixel = 0
+Spawn.Position = UDim2.new(0.563959956, 0, 0.348800004, 0)
+Spawn.Size = UDim2.new(0.333704114, 0, 0.0819418877, 0)
+Spawn.Font = Enum.Font.Highway
+Spawn.Text = "Spawn"
+Spawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.TextScaled = true
+Spawn.TextSize = 14.000
+Spawn.TextWrapped = true
+
+Nopvp.Name = "Nopvp"
+Nopvp.Parent = Tools
+Nopvp.BackgroundColor3 = Color3.fromRGB(128, 255, 7)
+Nopvp.BackgroundTransparency = 0.200
+Nopvp.BorderSizePixel = 0
+Nopvp.Position = UDim2.new(0.563959956, 0, 0.875701487, 0)
+Nopvp.Size = UDim2.new(0.333704114, 0, 0.0819418877, 0)
+Nopvp.Font = Enum.Font.Highway
+Nopvp.Text = "No PvP Zone"
+Nopvp.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nopvp.TextScaled = true
+Nopvp.TextSize = 14.000
+Nopvp.TextWrapped = true
+
+TextButton_2.Parent = Tools
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.0240823403, 0, 0.729239643, 0)
+TextButton_2.Size = UDim2.new(0.347581089, 0, 0.0956037864, 0)
+TextButton_2.Style = Enum.ButtonStyle.RobloxRoundButton
+TextButton_2.Font = Enum.Font.SciFi
+TextButton_2.Text = "Set Gravity"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 40.000
+TextButton_2.TextWrapped = true
+
+Grav.Name = "Grav"
+Grav.Parent = Tools
+Grav.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Grav.BackgroundTransparency = 0.500
+Grav.BorderSizePixel = 0
+Grav.Position = UDim2.new(0.122858748, 0, 0.520399988, 0)
+Grav.Size = UDim2.new(0.150000006, 0, 0.150000006, 0)
+Grav.Font = Enum.Font.SourceSansBold
+Grav.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+Grav.Text = "200"
+Grav.TextColor3 = Color3.fromRGB(255, 255, 255)
+Grav.TextScaled = true
+Grav.TextSize = 14.000
+Grav.TextStrokeTransparency = 0.000
+Grav.TextWrapped = true
+
+DescJP_3.Name = "DescJP"
+DescJP_3.Parent = Tools
+DescJP_3.BackgroundColor3 = Color3.fromRGB(0, 112, 35)
+DescJP_3.BackgroundTransparency = 1.000
+DescJP_3.BorderColor3 = Color3.fromRGB(0, 53, 7)
+DescJP_3.BorderSizePixel = 0
+DescJP_3.Position = UDim2.new(0.122858748, 0, 0.405733109, 0)
+DescJP_3.Size = UDim2.new(0.150000006, 0, 0.0970668942, 0)
+DescJP_3.Font = Enum.Font.Highway
+DescJP_3.Text = "Gravity"
+DescJP_3.TextColor3 = Color3.fromRGB(255, 255, 0)
+DescJP_3.TextScaled = true
+DescJP_3.TextSize = 14.000
+DescJP_3.TextStrokeTransparency = 0.500
+DescJP_3.TextWrapped = true
+
+Scripts_2.Name = "Scripts"
+Scripts_2.Parent = Background
+Scripts_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Scripts_2.BorderSizePixel = 0
+Scripts_2.Position = UDim2.new(0.0989999995, 0, -0.000933105475, 0)
+Scripts_2.Size = UDim2.new(0.898999989, 0, 1, 0)
+
+ImageLabel_2.Parent = Scripts_2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Size = UDim2.new(1, 0, 1, 0)
+ImageLabel_2.Image = "rbxassetid://6938370237"
+ImageLabel_2.ImageTransparency = 0.800
+
+TextButton_3.Parent = ImageLabel_2
+TextButton_3.BackgroundColor3 = Color3.fromRGB(16, 128, 1)
+TextButton_3.Position = UDim2.new(0.279199123, 0, 0.163200006, 0)
+TextButton_3.Size = UDim2.new(0.222469404, 0, 0.0799999982, 0)
+TextButton_3.Font = Enum.Font.Merriweather
+TextButton_3.Text = "Execute"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+TextLabel_4.Parent = TextButton_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(-1.03879869, 0, -0.556000054, 0)
+TextLabel_4.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_4.Font = Enum.Font.PermanentMarker
+TextLabel_4.Text = "Auto Click"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+TextLabel_5.Parent = TextButton_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(-1.03879857, 0, 0.423999995, 0)
+TextLabel_5.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_5.Font = Enum.Font.PermanentMarker
+TextLabel_5.Text = "Click when in Range"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextButton_4.Parent = ImageLabel_2
+TextButton_4.BackgroundColor3 = Color3.fromRGB(16, 128, 1)
+TextButton_4.Position = UDim2.new(0.746384859, 0, 0.163200006, 0)
+TextButton_4.Size = UDim2.new(0.222469404, 0, 0.0799999982, 0)
+TextButton_4.Font = Enum.Font.Merriweather
+TextButton_4.Text = "Execute"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+TextLabel_6.Parent = TextButton_4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(-1.03879869, 0, -0.556000054, 0)
+TextLabel_6.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_6.Font = Enum.Font.PermanentMarker
+TextLabel_6.Text = "Kill Op Bosses"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = TextButton_4
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(-1.03879857, 0, 0.56400001, 0)
+TextLabel_7.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_7.Font = Enum.Font.PermanentMarker
+TextLabel_7.Text = "List of ops:"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = TextButton_4
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(-0.623798609, 0, 1.88400006, 0)
+TextLabel_8.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_8.Font = Enum.Font.PermanentMarker
+TextLabel_8.Text = "Root"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TextLabel_9.Parent = TextButton_4
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(-0.623798609, 0, 2.88400006, 0)
+TextLabel_9.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_9.Font = Enum.Font.PermanentMarker
+TextLabel_9.Text = "Hyper Niko"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+TextLabel_10.Parent = TextButton_4
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(-0.623798609, 0, 4.08400011, 0)
+TextLabel_10.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_10.Font = Enum.Font.PermanentMarker
+TextLabel_10.Text = "Tails"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+TextButton_5.Parent = ImageLabel_2
+TextButton_5.BackgroundColor3 = Color3.fromRGB(16, 128, 1)
+TextButton_5.Position = UDim2.new(0.279199123, 0, 0.52640003, 0)
+TextButton_5.Size = UDim2.new(0.222469404, 0, 0.0799999982, 0)
+TextButton_5.Font = Enum.Font.Merriweather
+TextButton_5.Text = "Execute"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+TextLabel_11.Parent = TextButton_5
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(-1.03879869, 0, -0.556000054, 0)
+TextLabel_11.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_11.Font = Enum.Font.PermanentMarker
+TextLabel_11.Text = "Regular Obby"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+TextLabel_12.Parent = TextButton_5
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(-1.03879857, 0, 0.423999995, 0)
+TextLabel_12.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_12.Font = Enum.Font.PermanentMarker
+TextLabel_12.Text = "Finish Regular Obby"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+TextButton_6.Parent = ImageLabel_2
+TextButton_6.BackgroundColor3 = Color3.fromRGB(16, 128, 1)
+TextButton_6.Position = UDim2.new(0.279199123, 0, 0.70720005, 0)
+TextButton_6.Size = UDim2.new(0.222469404, 0, 0.0799999982, 0)
+TextButton_6.Font = Enum.Font.Merriweather
+TextButton_6.Text = "Execute"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+TextLabel_13.Parent = TextButton_6
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(-1.03879869, 0, -0.556000054, 0)
+TextLabel_13.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_13.Font = Enum.Font.PermanentMarker
+TextLabel_13.Text = "Extreme Obby"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+TextLabel_14.Parent = TextButton_6
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(-1.03879857, 0, 0.423999995, 0)
+TextLabel_14.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_14.Font = Enum.Font.PermanentMarker
+TextLabel_14.Text = "Finish Extreme Obby with speed"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+TextButton_7.Parent = ImageLabel_2
+TextButton_7.BackgroundColor3 = Color3.fromRGB(16, 128, 1)
+TextButton_7.Position = UDim2.new(0.279199123, 0, 0.345600009, 0)
+TextButton_7.Size = UDim2.new(0.222469404, 0, 0.0799999982, 0)
+TextButton_7.Font = Enum.Font.Merriweather
+TextButton_7.Text = "Execute"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+TextLabel_15.Parent = TextButton_7
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(-1.03879869, 0, -0.556000054, 0)
+TextLabel_15.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_15.Font = Enum.Font.PermanentMarker
+TextLabel_15.Text = "Kill fakes"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+TextLabel_16.Parent = TextButton_7
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(-1.03879857, 0, 0.423999995, 0)
+TextLabel_16.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_16.Font = Enum.Font.PermanentMarker
+TextLabel_16.Text = "Kills all fakes"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+TextButton_8.Parent = Theme
+TextButton_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_8.BackgroundTransparency = 1.000
+TextButton_8.Position = UDim2.new(0.971000016, 0, 0, 0)
+TextButton_8.Size = UDim2.new(0.0280000009, 0, 0.965517223, 0)
+TextButton_8.Font = Enum.Font.Nunito
+TextButton_8.Text = "X"
+TextButton_8.TextColor3 = Color3.fromRGB(204, 204, 204)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = Theme
+TextButton_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_9.BackgroundTransparency = 1.000
+TextButton_9.Position = UDim2.new(0.937000036, 0, 0, 0)
+TextButton_9.Size = UDim2.new(0.0280000009, 0, 0.965517223, 0)
+TextButton_9.Font = Enum.Font.Nunito
+TextButton_9.Text = "-"
+TextButton_9.TextColor3 = Color3.fromRGB(204, 204, 204)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
+Side.Name = "Side"
+Side.Parent = Theme
+Side.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+Side.BorderColor3 = Color3.fromRGB(23, 23, 23)
+Side.BorderSizePixel = 0
+Side.Position = UDim2.new(-0.00100000005, 0, 0.979866803, 0)
+Side.Size = UDim2.new(0.101000004, 0, 21.5517235, 0)
+
+Info.Name = "Info"
+Info.Parent = Side
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(0.25, 0, 0.0384000018, 0)
+Info.Size = UDim2.new(0.495049506, 0, 0.0799999982, 0)
+Info.Font = Enum.Font.Ubuntu
+Info.Text = "?"
+Info.TextColor3 = Color3.fromRGB(15, 128, 255)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+Info_2.Name = "Info"
+Info_2.Parent = Info
+Info_2.BackgroundColor3 = Color3.fromRGB(32, 255, 255)
+Info_2.BorderSizePixel = 0
+Info_2.Position = UDim2.new(1.5, 0, 0, 0)
+Info_2.Size = UDim2.new(4, 0, 1, 0)
+Info_2.Visible = false
+Info_2.Font = Enum.Font.Oswald
+Info_2.Text = "Info"
+Info_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.TextScaled = true
+Info_2.TextSize = 14.000
+Info_2.TextWrapped = true
+
+Scripts_3.Name = "Scripts"
+Scripts_3.Parent = Side
+Scripts_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_3.BackgroundTransparency = 1.000
+Scripts_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Scripts_3.Position = UDim2.new(0.25, 0, 0.163000003, 0)
+Scripts_3.Size = UDim2.new(0.495049506, 0, 0.0799999982, 0)
+Scripts_3.Image = "rbxassetid://6874850910"
+
+Scripts_4.Name = "Scripts"
+Scripts_4.Parent = Scripts_3
+Scripts_4.BackgroundColor3 = Color3.fromRGB(32, 255, 255)
+Scripts_4.BorderSizePixel = 0
+Scripts_4.Position = UDim2.new(1.5, 0, 0, 0)
+Scripts_4.Size = UDim2.new(4, 0, 1, 0)
+Scripts_4.Visible = false
+Scripts_4.Font = Enum.Font.Oswald
+Scripts_4.Text = "Scripts"
+Scripts_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts_4.TextScaled = true
+Scripts_4.TextSize = 14.000
+Scripts_4.TextWrapped = true
+
+Tools_2.Name = "Tools"
+Tools_2.Parent = Side
+Tools_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tools_2.BackgroundTransparency = 1.000
+Tools_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Tools_2.Position = UDim2.new(0.25, 0, 0.287999988, 0)
+Tools_2.Size = UDim2.new(0.495049506, 0, 0.0799999982, 0)
+Tools_2.Image = "rbxassetid://6874887639"
+
+Tools_3.Name = "Tools"
+Tools_3.Parent = Tools_2
+Tools_3.BackgroundColor3 = Color3.fromRGB(32, 255, 255)
+Tools_3.BorderSizePixel = 0
+Tools_3.Position = UDim2.new(1.5, 0, 0, 0)
+Tools_3.Size = UDim2.new(4, 0, 1, 0)
+Tools_3.Visible = false
+Tools_3.Font = Enum.Font.Oswald
+Tools_3.Text = "Tools"
+Tools_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tools_3.TextScaled = true
+Tools_3.TextSize = 14.000
+Tools_3.TextWrapped = true
+
+Verify.Name = "Verify"
+Verify.Parent = Side
+Verify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Verify.BackgroundTransparency = 1.000
+Verify.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Verify.Position = UDim2.new(0.25, 0, 0.860799968, 0)
+Verify.Size = UDim2.new(0.495049506, 0, 0.0799999982, 0)
+Verify.Image = "rbxassetid://6875367741"
+
+Verify_2.Name = "Verify"
+Verify_2.Parent = Verify
+Verify_2.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+Verify_2.BorderSizePixel = 0
+Verify_2.Position = UDim2.new(-0.75999999, 0, -1.12, 0)
+Verify_2.Size = UDim2.new(2.5, 0, 1, 0)
+Verify_2.Font = Enum.Font.Oswald
+Verify_2.Text = "Verify"
+Verify_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Verify_2.TextScaled = true
+Verify_2.TextSize = 14.000
+Verify_2.TextWrapped = true
+
+Okin.Name = "Okin"
+Okin.Parent = Side
+Okin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Okin.BackgroundTransparency = 1.000
+Okin.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Okin.Position = UDim2.new(0.25, 0, 0.428799987, 0)
+Okin.Size = UDim2.new(0.495049506, 0, 0.0799999982, 0)
+Okin.Image = "rbxassetid://6945873064"
+
+Tools_4.Name = "Tools"
+Tools_4.Parent = Okin
+Tools_4.BackgroundColor3 = Color3.fromRGB(32, 255, 255)
+Tools_4.BorderSizePixel = 0
+Tools_4.Position = UDim2.new(1.5, 0, 0, 0)
+Tools_4.Size = UDim2.new(4, 0, 1, 0)
+Tools_4.Visible = false
+Tools_4.Font = Enum.Font.Oswald
+Tools_4.Text = "Tools"
+Tools_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tools_4.TextScaled = true
+Tools_4.TextSize = 14.000
+Tools_4.TextWrapped = true
+
+-- Scripts:
+
+local function SQZJKO_fake_script() -- Progress.LocalScript 
+	local script = Instance.new('LocalScript', Progress)
+
+	script.Parent:TweenSize(UDim2.new(1,0,1,0),"InOut","Sine",6)
+	
+end
+coroutine.wrap(SQZJKO_fake_script)()
+-- Loading.LocalScript is disabled.
+local function PQFSINK_fake_script() -- Loading.Script 
+	local script = Instance.new('Script', Loading)
+
+	script.Parent.Start.Visible = true
+	wait(1)
+	script.Parent.Start.Visible = false
+	script.Parent.Load.Visible = true
+	wait(2)
+	script.Parent.Load.Visible = false
+	script.Parent.Data.Visible = true
+	wait(1)
+	script.Parent.Data.Visible = false
+	script.Parent.Scripts.Visible = true
+	wait(1)
+	script.Parent.Scripts.Visible = false
+	script.Parent.Done.Visible = true
+	wait(2)
+	script.Parent.Parent.Theme.Visible = true
+	wait(2)
+	script.Parent:Destroy()
+end
+coroutine.wrap(PQFSINK_fake_script)()
+local function UTLD_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	Spinny = script.Parent
+	
+	while true do
+		wait(0.01)
+		Spinny.Rotation = Spinny.Rotation +2
+	end
+	
+end
+coroutine.wrap(UTLD_fake_script)()
+-- Load_2.LocalScript is disabled.
+local function VRIA_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.SpeedBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.WalkSpeed = setspeed
+		end
+	end)
+end
+coroutine.wrap(VRIA_fake_script)()
+local function ARMUEDU_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.JumpBox.Text
+		local hum = game.Workspace:WaitForChild(player.Name).Humanoid
+		if hum then
+			hum.JumpPower = setspeed
+		end
+	end)
+end
+coroutine.wrap(ARMUEDU_fake_script)()
+local function AYND_fake_script() -- Teleporttycoon.LocalScript 
+	local script = Instance.new('LocalScript', Teleporttycoon)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local Event = game:GetService("ReplicatedStorage").Events.Teleport
+		Event:InvokeServer()
+	end)
+end
+coroutine.wrap(AYND_fake_script)()
+local function SHTVXJ_fake_script() -- Spawntycoon.LocalScript 
+	local script = Instance.new('LocalScript', Spawntycoon)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		
+	
+		local Event = game:GetService("ReplicatedStorage").Events.SpawnTycoon
+		Event:InvokeServer()
+	
+	end)
+end
+coroutine.wrap(SHTVXJ_fake_script)()
+local function QIDTZN_fake_script() -- Ruby.LocalScript 
+	local script = Instance.new('LocalScript', Ruby)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-863, 9, 618)
+	end)
+end
+coroutine.wrap(QIDTZN_fake_script)()
+local function OWGHSMV_fake_script() -- Sap.LocalScript 
+	local script = Instance.new('LocalScript', Sap)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1317, -1, 943)
+	end)
+end
+coroutine.wrap(OWGHSMV_fake_script)()
+local function MWPAP_fake_script() -- Diamond.LocalScript 
+	local script = Instance.new('LocalScript', Diamond)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1640, -11, 1297)
+	end)
+end
+coroutine.wrap(MWPAP_fake_script)()
+local function PRYOMIQ_fake_script() -- Spawn.LocalScript 
+	local script = Instance.new('LocalScript', Spawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-84, 7, 45)
+	end)
+end
+coroutine.wrap(PRYOMIQ_fake_script)()
+local function JDWFIFO_fake_script() -- Nopvp.LocalScript 
+	local script = Instance.new('LocalScript', Nopvp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		wait()
+		local clickdetector = workspace.Spawn.TSSafeZone.lol.ClickDetector
+		fireclickdetector(clickdetector)
+	end)
+end
+coroutine.wrap(JDWFIFO_fake_script)()
+local function BOQGT_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local setspeed = script.Parent.Parent.Grav.Text
+		local hum = game.Workspace
+		if hum then
+			hum.Gravity = setspeed
+		end
+	end)
+end
+coroutine.wrap(BOQGT_fake_script)()
+local function XUIKIU_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while true do
+			wait()
+			local clickdetector = workspace.Err0r61OSpawner.Button.ClickDetector 
+			fireclickdetector(clickdetector)
+		end
+	end)
+end
+coroutine.wrap(XUIKIU_fake_script)()
+local function SSTG_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["NikoAndTails"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(SSTG_fake_script)()
+local function AHMA_fake_script() -- TextButton_4.Hyper 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Hyper Fake NikoSquared"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(AHMA_fake_script)()
+local function IYSJJ_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["NikoSquaredRoot"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(IYSJJ_fake_script)()
+local function DTJS_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-243, 170, 634.8)
+		wait(2)
+		local Event = game:GetService("ReplicatedStorage").Events.Teleport
+		Event:InvokeServer()
+	
+	end)
+end
+coroutine.wrap(DTJS_fake_script)()
+local function OWOPYY_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(29, 170, -512.8)
+		wait(2)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(127, 170, -1000.8)
+		wait(2)
+		local Event = game:GetService("ReplicatedStorage").Events.Teleport
+		Event:InvokeServer()
+	
+	end)
+end
+coroutine.wrap(OWOPYY_fake_script)()
+local function ATOOM_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake xXTheInspiredXx"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(ATOOM_fake_script)()
+local function KQIE_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Oatur"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(KQIE_fake_script)()
+local function HEEFIF_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake kingfirelord360bro1"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(HEEFIF_fake_script)()
+local function QHCL_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake sakintan7"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(QHCL_fake_script)()
+local function RDBN_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Kikitob"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(RDBN_fake_script)()
+local function WZDMZOD_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Appalachee_Gamer"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(WZDMZOD_fake_script)()
+local function GKYL_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jt536170"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(GKYL_fake_script)()
+local function ECLKFE_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake kingfirelord360bro1"].Head:Destroy()
+	end)
+end
+coroutine.wrap(ECLKFE_fake_script)()
+local function GWUTV_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Toukua"].Head:Destroy()
+	end)
+end
+coroutine.wrap(GWUTV_fake_script)()
+local function PPBP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jjonesyy1"].Head:Destroy()
+	end)
+end
+coroutine.wrap(PPBP_fake_script)()
+local function YUNAK_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Execious"].Head:Destroy()
+	end)
+end
+coroutine.wrap(YUNAK_fake_script)()
+local function XRXAO_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Gforces_007"].Head:Destroy()
+	end)
+end
+coroutine.wrap(XRXAO_fake_script)()
+local function EALSMI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake 123thegiver123"].Head:Destroy()
+	end)
+end
+coroutine.wrap(EALSMI_fake_script)()
+local function HEKMFI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake PurpleHaeze"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HEKMFI_fake_script)()
+local function SJVZAWV_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake 5oiw"].Head:Destroy()
+	end)
+end
+coroutine.wrap(SJVZAWV_fake_script)()
+local function QCFLW_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake AgentLies"].Head:Destroy()
+	end)
+end
+coroutine.wrap(QCFLW_fake_script)()
+local function YKONWMJ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake whatupdawg23"].Head:Destroy()
+	end)
+end
+coroutine.wrap(YKONWMJ_fake_script)()
+local function RCSQJNP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ComDude1011"].Head:Destroy()
+	end)
+end
+coroutine.wrap(RCSQJNP_fake_script)()
+local function HRSDF_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake oreotwistlickdunk"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HRSDF_fake_script)()
+local function KJCL_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake prestna"].Head:Destroy()
+	end)
+end
+coroutine.wrap(KJCL_fake_script)()
+local function LFIIPJE_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake nuclearnovalol"].Head:Destroy()
+	end)
+end
+coroutine.wrap(LFIIPJE_fake_script)()
+local function DWAOOJ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake hotrodeoin"].Head:Destroy()
+	end)
+end
+coroutine.wrap(DWAOOJ_fake_script)()
+local function ZJQJJ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake RAYMONDTHEGHOST"].Head:Destroy()
+	end)
+end
+coroutine.wrap(ZJQJJ_fake_script)()
+local function SAAJP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake wh0opey"].Head:Destroy()
+	end)
+end
+coroutine.wrap(SAAJP_fake_script)()
+local function ISQIZAF_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake EmperorRektus"].Head:Destroy()
+	end)
+end
+coroutine.wrap(ISQIZAF_fake_script)()
+local function MZPFP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Smart10000"].Head:Destroy()
+	end)
+end
+coroutine.wrap(MZPFP_fake_script)()
+local function PAQZO_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake luanpode"].Head:Destroy()
+	end)
+end
+coroutine.wrap(PAQZO_fake_script)()
+local function UCCOQN_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ITZWINNIE_MAN"].Head:Destroy()
+	end)
+end
+coroutine.wrap(UCCOQN_fake_script)()
+local function UILGPJL_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jordan0305"].Head:Destroy()
+	end)
+end
+coroutine.wrap(UILGPJL_fake_script)()
+local function HXWK_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ImNoobButBetterThanU"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HXWK_fake_script)()
+local function AYUJE_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ShadoowWolf"].Head:Destroy()
+	end)
+end
+coroutine.wrap(AYUJE_fake_script)()
+local function JMFAJAF_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake adriantejada41522"].Head:Destroy()
+	end)
+end
+coroutine.wrap(JMFAJAF_fake_script)()
+local function JIANYSO_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake garra0215"].Head:Destroy()
+	end)
+end
+coroutine.wrap(JIANYSO_fake_script)()
+local function YXZB_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake markjjjallen"].Head:Destroy()
+	end)
+end
+coroutine.wrap(YXZB_fake_script)()
+local function VEMB_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Kostya1337K"].Head:Destroy()
+	end)
+end
+coroutine.wrap(VEMB_fake_script)()
+local function HLDE_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Sylveon2222 (Sylveon Wins Simulator)"].Head:Destroy()
+	end)
+end
+coroutine.wrap(HLDE_fake_script)()
+local function WBGQ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake littledad123456789"].Head:Destroy()
+	end)
+end
+coroutine.wrap(WBGQ_fake_script)()
+local function IDNZRCH_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Samirjan_2007"].Head:Destroy()
+	end)
+end
+coroutine.wrap(IDNZRCH_fake_script)()
+local function MXTAVXE_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake LexyRepose"].Head:Destroy()
+	end)
+end
+coroutine.wrap(MXTAVXE_fake_script)()
+local function XLEEMWO_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake DarkyDan25"].Head:Destroy()
+	end)
+end
+coroutine.wrap(XLEEMWO_fake_script)()
+local function ZDNBG_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Rexob21"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(ZDNBG_fake_script)()
+local function AVBPXZ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Lucid4"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(AVBPXZ_fake_script)()
+local function KOWFIW_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MrSuper213"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(KOWFIW_fake_script)()
+local function PAYV_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake nuclearnovalol"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(PAYV_fake_script)()
+local function PVHRCDI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake jfknight28"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(PVHRCDI_fake_script)()
+local function PAPHUR_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Platform14"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(PAPHUR_fake_script)()
+local function NOAKMPP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake N_evo"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(NOAKMPP_fake_script)()
+local function HHRAXQ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MrSuper213"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(HHRAXQ_fake_script)()
+local function OVUJUZI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake 0fmx"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(OVUJUZI_fake_script)()
+local function RDEAI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake S_peezy"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(RDEAI_fake_script)()
+local function BYULL_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ThugXY28"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(BYULL_fake_script)()
+local function XVZFYFD_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Mo_onlord"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(XVZFYFD_fake_script)()
+local function TRMZHZ_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake springgun19"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(TRMZHZ_fake_script)()
+local function LIGP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake RayhanMahtab_YT"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(LIGP_fake_script)()
+local function GDSXMWN_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake WizardlyJoker"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(GDSXMWN_fake_script)()
+local function WQEQMYP_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake Legendarymanman"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(WQEQMYP_fake_script)()
+local function UNMPA_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake danperor"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(UNMPA_fake_script)()
+local function DRET_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ThugXY28"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(DRET_fake_script)()
+local function BXZZJKX_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MissCrytex"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(BXZZJKX_fake_script)()
+local function NNECT_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake ObscureJoy"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(NNECT_fake_script)()
+local function FMCTFKD_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake RayhanMahtab_YT"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(FMCTFKD_fake_script)()
+local function QIIHHI_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake thickiest"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(QIIHHI_fake_script)()
+local function XGOPPDB_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake MissCrytex"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(XGOPPDB_fake_script)()
+local function FATU_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("Workspace")["Fake noob00246"].Head:Destroy()
+	
+	end)
+end
+coroutine.wrap(FATU_fake_script)()
+local function LPRZ_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(LPRZ_fake_script)()
+local function DLILY_fake_script() -- Info.LocalScript 
+	local script = Instance.new('LocalScript', Info)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Info.Visible = true
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Info.Visible = false
+	end)
+end
+coroutine.wrap(DLILY_fake_script)()
+local function VECAW_fake_script() -- Scripts_3.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_3)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Scripts.Visible = true
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Scripts.Visible = false
+	end)
+end
+coroutine.wrap(VECAW_fake_script)()
+local function RSIN_fake_script() -- Scripts_3.LocalScript 
+	local script = Instance.new('LocalScript', Scripts_3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Background.Scripts.Visible = true
+		script.Parent.Parent.Parent.Background.Tools.Visible = false
+	end)
+end
+coroutine.wrap(RSIN_fake_script)()
+local function MGIAYC_fake_script() -- Tools_2.LocalScript 
+	local script = Instance.new('LocalScript', Tools_2)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Tools.Visible = true
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Tools.Visible = false
+	end)
+end
+coroutine.wrap(MGIAYC_fake_script)()
+local function MDFN_fake_script() -- Tools_2.LocalScript 
+	local script = Instance.new('LocalScript', Tools_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Background.Scripts.Visible = false
+		script.Parent.Parent.Parent.Background.Tools.Visible = true
+	end)
+end
+coroutine.wrap(MDFN_fake_script)()
+local function CPLVLCO_fake_script() -- Verify.LocalScript 
+	local script = Instance.new('LocalScript', Verify)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Verify.Visible = true
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Verify.Visible = false
+	end)
+end
+coroutine.wrap(CPLVLCO_fake_script)()
+local function XFSO_fake_script() -- Okin.LocalScript 
+	local script = Instance.new('LocalScript', Okin)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.Tools.Visible = true
+	
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.Tools.Visible = false
+	end)
+end
+coroutine.wrap(XFSO_fake_script)()
+local function UBEH_fake_script() -- Theme.LocalScript 
+	local script = Instance.new('LocalScript', Theme)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(UBEH_fake_script)()
